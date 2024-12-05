@@ -1,0 +1,17 @@
+{% extends 'page/base.html' %}
+{% load static %}
+{% block title %}
+Library
+{% endblock title %}
+{% block content %}
+
+<h1 id="he">Список литературы:</h1>
+<div class="lib_cont">
+	<a href="">
+	<img src="{% static 'page/img/authors.svg'%}" alt="authors">
+	</a>
+	<a href="/olonho">
+	<img src="{% static 'page/img/olonho.svg'%}" alt="olonho">
+	</a>
+</div>
+{% endblock content %}

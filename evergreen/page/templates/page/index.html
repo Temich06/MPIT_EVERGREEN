@@ -1,29 +1,10 @@
-<!DOCTYPE html>
+{% extends 'page/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{% static 'page/css/style.css'%}">
-    <meta charset="UTF-8">
-    <title>page</title>
-</head>
-<body>
-<div class="container">
-	<header id="page_header">
-		<nav>
-			<ul id="menu">
-				<li>
-					<a href="#">Словарь</a>
-				</li>
-		      	<li>
-		      		<a href="#">Список литературы</a>
-		      	</li>
-			</ul>
-		</nav>
-		<ul id="auth">
-				<button>Войти</button>
-				<button>Регистрация</button>
-			</ul>
-	</header>
+
+{% block title %}
+index
+{% endblock title %}
+{% block content %}
 	<div class="leftcontainer">
 		<ul>
 			<li>
@@ -40,6 +21,4 @@
 	<div class="rightcontainer">
 		<img src="{% static 'page/img/mas.jpg'%}" alt="mas.jpg">
 	</div>
-</div>
-</body>
-</html>
+{% endblock content %}

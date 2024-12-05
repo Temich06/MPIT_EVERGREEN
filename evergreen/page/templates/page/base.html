@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'page/css/style.css'%}">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+<div class="container">
+	<header id="page_header">
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Словарь</a>
+				</li>
+		      	<li>
+		      		<a href="/library">Список литературы</a>
+		      	</li>
+			</ul>
+		</nav>
+		<ul id="auth">
+				<a href="#">Войти</a>
+				<a class='registration_button' href="#">Регистрация</a>
+			</ul>
+	</header>
+    {% block content %}
+
+    {% endblock content %}
+</div>
+</body>
+</html>
